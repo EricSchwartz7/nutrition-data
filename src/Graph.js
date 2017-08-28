@@ -45,15 +45,15 @@ class Graph extends Component {
     return (
       <div className='graph-section'>
         <form onSubmit={this.handleSubmit}>
-              Which foods contain the most
-              <select name='filter' value={this.state.filter} onChange={this.handleChange}>
-              <option value='208'>Calories</option>
-              <option value='203'>Protein</option>
-              <option value='204'>Lipids (Fat)</option>
-              <option value='205'>Carbohydrates</option>
-              <option value='269'>Sugars</option>
-            </select>
-             per serving?
+          Which foods contain the most
+          <select name='filter' value={this.state.filter} onChange={this.handleChange}>
+            <option value='208'>Calories</option>
+            <option value='203'>Protein</option>
+            <option value='204'>Lipids (Fat)</option>
+            <option value='205'>Carbohydrates</option>
+            <option value='269'>Sugars</option>
+          </select>
+          per serving?
           <br />
           <label className='checkbox-label'>
             Limit to most commonly consumed foods

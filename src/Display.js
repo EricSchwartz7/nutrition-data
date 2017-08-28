@@ -3,7 +3,6 @@ import {HorizontalBar} from 'react-chartjs-2';
 
 const Display = function (props) {
 
-
   if (Object.keys(props.data).length > 0){
 
     const nutrient = props.data[0].nutrients[0].nutrient;
@@ -36,7 +35,7 @@ const Display = function (props) {
           }
         }]
       }
-    }
+    };
 
     return (
       <HorizontalBar
@@ -48,6 +47,6 @@ const Display = function (props) {
   return (
     <p>Please select a nutrient.</p>
   )
-}
+};
 
 export default Display;
