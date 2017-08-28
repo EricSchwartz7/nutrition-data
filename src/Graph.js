@@ -21,7 +21,6 @@ class Graph extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-
   handleChange(e) {
     const target = e.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -39,7 +38,6 @@ class Graph extends Component {
         data: data.data.report.foods
       }) );
   }
-
 
   render() {
     return (
