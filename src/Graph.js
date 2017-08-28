@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Display from './Display';
 import loading from './loading.gif'
+import { API_KEY } from './config.js'
 
-const baseURL = 'https://api.nal.usda.gov/ndb/nutrients/?format=json&api_key=1a3quCIlkBB16IIsDrDRzlFoeZezD3Gl9oK5NhNE&';
+const baseURL = 'https://api.nal.usda.gov/ndb/nutrients/?format=json&api_key=' + API_KEY + '&';
 
 class Graph extends Component {
   constructor(){
