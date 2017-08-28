@@ -1,19 +1,8 @@
 import React from 'react';
 import {HorizontalBar} from 'react-chartjs-2';
 
-// const nutrientCodes = {
-//   '208': 'Calories',
-//   '203': 'Protein',
-//   '204': 'Lipids (fat)',
-//   '205': 'Carbohydrates',
-//   '269': 'Sugars'
-// }
-
-
 const Display = function (props) {
 
-  // const nutrient = nutrientCodes[props.filter];
-  // const unit = prop
 
   if (Object.keys(props.data).length > 0){
 
@@ -34,12 +23,25 @@ const Display = function (props) {
           hoverBorderColor: 'rgba(99,134,255,1)',
           data: values
         }
-      ]
+      ],
+
     };
+
+    const options = {
+      scales: {
+        xAxes: [{
+          display: true,
+          ticks: {
+            beginAtZero: true   // minimum value will be 0.
+          }
+        }]
+      }
+    }
 
     return (
       <HorizontalBar
         data={chartData}
+        options={options}
       />
     )
   }

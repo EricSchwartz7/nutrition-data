@@ -34,3 +34,7 @@
 form {
   margin-bottom: 10px;
 }
+
+select, input {
+  margin: 5px;
+}
