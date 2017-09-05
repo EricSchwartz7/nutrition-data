@@ -1,7 +1,7 @@
 import React from 'react';
 import {HorizontalBar} from 'react-chartjs-2';
 
-const Display = function (props) {
+const Display = (props) => {
 
   if (Object.keys(props.data).length > 0){
 
